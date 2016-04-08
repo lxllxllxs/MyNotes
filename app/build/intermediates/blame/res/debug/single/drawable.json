@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\title.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\title.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_photo.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\icon_photo.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_video.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\icon_video.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\add.png"
+    }
+]

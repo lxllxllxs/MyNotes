@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aty_eidt_note.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\aty_eidt_note.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notes_list_cell.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\notes_list_cell.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\homepage.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\homepage.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\title.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\media_list_cell.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\media_list_cell.xml"
+    }
+]
