@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 22
     buildToolsVersion "23.0.2"
 
     defaultConfig {
@@ -19,6 +19,7 @@ android {
 }
 
 dependencies {
+    //noinspection GradleCompatible
     compile 'com.android.support:support-v4:18.0.0'
     compile files('src/libs/mysql-connector-java-5.1.26-bin.jar')
 }
