@@ -17,12 +17,13 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"  android:gravity="center"
         android:layout_height="wrap_content">
-        <Button
+        <ImageButton
             android:id="@+id/btnAddNote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="添加日志"
+            android:background="#00000000"
+            android:src="@drawable/add"
+
             />
     </LinearLayout>
 </LinearLayout>

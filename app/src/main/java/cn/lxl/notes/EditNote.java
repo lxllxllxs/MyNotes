@@ -140,7 +140,7 @@ public class EditNote extends ListActivity {
 		
 		switch (data.type) {
 		case MediaType.PHOTO:
-			i = new Intent(this, PhotoViewer.class);
+			i = new Intent(this,    PhotoViewer.class);
 			i.putExtra(PhotoViewer.EXTRA_PATH, data.path);
 			startActivity(i);
 			break;

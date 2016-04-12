@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pic.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\pic.png"
+    },
+    {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\title.png",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\title.png"
     },
@@ -14,5 +18,17 @@
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\video.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\video.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\save.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cancle.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\cancle.png"
     }
 ]

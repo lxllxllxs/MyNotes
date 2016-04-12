@@ -12,16 +12,12 @@
         "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\notes_list_cell.xml"
     },
     {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\homepage.xml",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\homepage.xml"
-    },
-    {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title.xml",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\title.xml"
     },
     {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\login.xml"
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\baiduyun.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\baiduyun.xml"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\media_list_cell.xml",

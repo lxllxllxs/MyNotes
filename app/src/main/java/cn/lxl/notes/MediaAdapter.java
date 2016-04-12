@@ -53,6 +53,7 @@ public class MediaAdapter extends BaseAdapter{
 
             ivIcon.setImageResource(data.iconId);
             tvPath.setText(data.path);
+			tvPath.setTextSize(11);
             return convertView;
         }
 

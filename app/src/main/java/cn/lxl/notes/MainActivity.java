@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +21,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -38,7 +39,8 @@ public class MainActivity extends ListActivity {
 	public static final int REQUEST_CODE_EDIT_NOTE = 2;
 	public static final int NOT_DELETE_ALL = 0;
 	public static final int DELETE_ALL = 1;
-
+	final String filepath="/data/data/com.lxl.notes/databases/notes.db";
+	final String exportPath= Environment.getExternalStorageDirectory()+"/notes.db";
 	private OnClickListener btn_clickHandler=new OnClickListener() {
 		@Override
 		public void onClick(View v) {
@@ -62,7 +64,7 @@ public class MainActivity extends ListActivity {
 		ListView lv=(ListView)findViewById(android.R.id.list);
 		lv.setOnItemLongClickListener(itemLongClickListener);
 		refreshNotesListView();
-		
+		Log.d("exportpath",exportPath);
 		findViewById(R.id.btnAddNote).setOnClickListener(btn_clickHandler);
 	}
 	
@@ -131,8 +133,7 @@ public class MainActivity extends ListActivity {
 	}
 
 	public  void exportFile(){
-		final String filepath="/data/data/com.lxl.notes/databases/notes.db";
-		final String exportPath="/sdcard/Mynotes/notes.db";
+
 		try {
 			FileInputStream fis=new FileInputStream(new File(filepath));
 			FileOutputStream fos=new FileOutputStream(new File(exportPath));
@@ -187,12 +188,6 @@ public class MainActivity extends ListActivity {
 
 	}
 
-	public  void login(){
-		Intent intent=new Intent(MainActivity.this,LoginAty.class);
-		startActivity(intent);
-
-	}
-
 	public AdapterView.OnItemLongClickListener itemLongClickListener=new AdapterView.OnItemLongClickListener() {
 		@Override
 		public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -224,6 +219,7 @@ public class MainActivity extends ListActivity {
 		//Toast.makeText(this,"asd",Toast.LENGTH_SHORT).show();
 		menu.add(0,1,2,"清空所有数据");
 		menu.add(0,2,2,"备份到内存卡");
+		menu.add(0,3,2, "从sd卡导入");
 		return super.onCreatePanelMenu(featureId, menu);
 
 	}
@@ -232,9 +228,35 @@ public class MainActivity extends ListActivity {
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		if (item.getItemId()==2){
 			exportFile();
-		}else {
+		}if (item.getItemId()==1) {
 			AlertDialog(MainActivity.this);
+		}if(item.getItemId()==3){
+			importFile();
+			Toast.makeText(MainActivity.this,"导入成功",Toast.LENGTH_SHORT).show();
+			refreshNotesListView();
 		}
 		return super.onMenuItemSelected(featureId, item);
+	}
+
+	private void importFile() {
+		File backfile=new File(exportPath);
+		if(backfile.exists()&&backfile.isFile()){
+			try {
+				FileInputStream fis=new FileInputStream(backfile);
+				FileOutputStream fos=new FileOutputStream(new File(filepath));
+				int count=0;
+				byte[] buff=new byte[1024];
+				while((count=fis.read(buff))!=-1){
+					fos.write(buff,0,count);
+				}
+				fis.close();
+				fos.close();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		}
 	}
 }//last
