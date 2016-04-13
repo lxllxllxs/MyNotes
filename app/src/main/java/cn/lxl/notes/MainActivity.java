@@ -8,8 +8,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -40,6 +42,7 @@ public class MainActivity extends ListActivity {
 	public static final int REQUEST_CODE_EDIT_NOTE = 2;
 	public static final int NOT_DELETE_ALL = 0;
 	public static final int DELETE_ALL = 1;
+	Toolbar tb;
 	final String filepath="/data/data/com.lxl.notes/databases/notes.db";
 	final String exportPath= Environment.getExternalStorageDirectory()+"/notes.db";
 	private OnClickListener btn_clickHandler=new OnClickListener() {
@@ -54,9 +57,9 @@ public class MainActivity extends ListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//fullandnotitle();//设置全屏无标题
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
-
+		toobarInit();//设置工具栏
 		db = new NotesDB(this);
 		dbRead = db.getReadableDatabase();
 		dbWrite=db.getWritableDatabase();
@@ -126,12 +129,6 @@ public class MainActivity extends ListActivity {
         return super.onKeyDown(keyCode, event);
     }
 
-    public void fullandnotitle(){
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-        /*set it to be full screen*/
-//		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-	}
 
 	public  void exportFile(){
 
@@ -215,30 +212,6 @@ public class MainActivity extends ListActivity {
 	};
 
 
-	@Override
-	public boolean onCreatePanelMenu(int featureId, Menu menu) {
-		//Toast.makeText(this,"asd",Toast.LENGTH_SHORT).show();
-		menu.add(0,1,2,"清空所有数据");
-		menu.add(0,2,2,"备份到内存卡");
-		menu.add(0,3,2, "从sd卡导入");
-		return super.onCreatePanelMenu(featureId, menu);
-
-	}
-
-	@Override
-	public boolean onMenuItemSelected(int featureId, MenuItem item) {
-		if (item.getItemId()==2){
-			exportFile();
-		}if (item.getItemId()==1) {
-			AlertDialog(MainActivity.this);
-		}if(item.getItemId()==3){
-			importFile();
-			Toast.makeText(MainActivity.this,"导入成功",Toast.LENGTH_SHORT).show();
-			refreshNotesListView();
-		}
-		return super.onMenuItemSelected(featureId, item);
-	}
-
 	private void importFile() {
 		File backfile=new File(exportPath);
 		if(backfile.exists()&&backfile.isFile()){
@@ -259,5 +232,33 @@ public class MainActivity extends ListActivity {
 			}
 
 		}
+	}
+
+
+
+	private void toobarInit() {
+		tb=(Toolbar)findViewById(R.id.toolbar);
+		tb.setBackgroundColor(Color.GRAY);
+		tb.setTitle("MyNote");
+		tb.setLogo(R.mipmap.title);
+		tb.inflateMenu(R.menu.main);
+
+		tb.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				if (item.getItemId() == R.id.item2) {
+					exportFile();
+				}
+				if (item.getItemId() ==  R.id.item1) {
+					AlertDialog(MainActivity.this);
+				}
+				if (item.getItemId() ==  R.id.item3) {
+					importFile();
+					Toast.makeText(MainActivity.this, "导入成功", Toast.LENGTH_SHORT).show();
+					refreshNotesListView();
+				}return  true;
+			}
+		});
+
 	}
 }//last

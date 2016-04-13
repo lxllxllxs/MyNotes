@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "listview.study.lxl.com.lxlwenjianliulanqi"
+        applicationId "com.lxl.notes"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1

@@ -1,9 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-<!--
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
--->
+        android:id="@+id/item1"
+        android:title="清空所有数据"/>
+    <item
+        android:id="@+id/item2"
+        android:title="备份到内存卡"/>
+    <item
+        android:id="@+id/item3"
+        android:title="从sd卡导入"/>
+
 </menu>

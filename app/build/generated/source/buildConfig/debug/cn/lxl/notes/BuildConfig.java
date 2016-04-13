@@ -5,7 +5,7 @@ package cn.lxl.notes;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "listview.study.lxl.com.lxlwenjianliulanqi";
+  public static final String APPLICATION_ID = "com.lxl.notes";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;
