@@ -14,7 +14,6 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -98,7 +97,7 @@ public class EditNote extends ListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+	//	requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.aty_eidt_note);
 		lv=(ListView)findViewById(android.R.id.list);
 		lv.setOnItemLongClickListener(editlongClickListener);
