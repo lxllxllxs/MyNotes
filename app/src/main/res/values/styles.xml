@@ -14,7 +14,8 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-       <item name="android:contentInsetStart">0dp</item>
+
+       <!--<item name="android:contentInsetStart">0dp</item>-->
     </style>
 
 </resources>

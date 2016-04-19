@@ -27,7 +27,7 @@ import java.util.Date;
 
 import cn.lxl.notes.db.NotesDB;
 
-public class EditNote extends ListActivity {
+public class EditActivity extends ListActivity {
 	private  final  String TAG="MyNote";//debug
 	private int noteId = -1;
 	private EditText etName,etContent;
@@ -231,7 +231,7 @@ public class EditNote extends ListActivity {
 		public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 			MediaListCellData data = adapter.getItem(position);
 
-			//Toast.makeText(EditNote.this, "" + data.id,Toast.LENGTH_SHORT).show();
+			//Toast.makeText(EditActivity.this, "" + data.id,Toast.LENGTH_SHORT).show();
 			getDialog(data.id, position);
 			return true;
 		}
@@ -245,7 +245,7 @@ public class EditNote extends ListActivity {
 	}
 
 	public  void getDialog(final int dataId,final  int position){
-		AlertDialog.Builder builder=new AlertDialog.Builder(EditNote.this);
+		AlertDialog.Builder builder=new AlertDialog.Builder(EditActivity.this);
 		builder.setTitle("注意");
 		builder.setMessage("确定要删除该项吗？");
 		builder.setCancelable(false);

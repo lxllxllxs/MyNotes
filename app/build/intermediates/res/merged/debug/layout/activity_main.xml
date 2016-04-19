@@ -10,14 +10,8 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-toolbar:contentInsetStart="0dp"
+    toolbar:contentInsetStart="0dp"
     >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="this is the toolbar"/>
-
 </android.support.v7.widget.Toolbar>
     <ListView
         android:id="@+id/android:list"
