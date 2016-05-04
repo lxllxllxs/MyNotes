@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
@@ -62,10 +62,6 @@
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_activity_chooser_view_include.xml"
-    },
-    {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\baiduyun.xml",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\layout\\baiduyun.xml"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",

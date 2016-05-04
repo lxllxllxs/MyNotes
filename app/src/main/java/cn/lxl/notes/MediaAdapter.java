@@ -41,19 +41,23 @@ public class MediaAdapter extends BaseAdapter{
         }
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-
+			ViewHolder holder = null;
             if (convertView==null) {
                 convertView = LayoutInflater.from(context).inflate(R.layout.media_list_cell, null);
-            }
+				holder = new ViewHolder();
+				holder.ivIcon = (ImageView) convertView.findViewById(R.id.ivIcon);
+				holder.tvPath = (TextView) convertView.findViewById(R.id.tvPath);
+				convertView.setTag(holder);   //将Holder存储到convertView中
 
+            }else{
+				holder = (ViewHolder) convertView.getTag();
+			}
             MediaListCellData data = getItem(position);
+//            ImageView ivIcon = (ImageView) convertView.findViewById(R.id.ivIcon);
+//            TextView tvPath = (TextView) convertView.findViewById(R.id.tvPath);
 
-            ImageView ivIcon = (ImageView) convertView.findViewById(R.id.ivIcon);
-            TextView tvPath = (TextView) convertView.findViewById(R.id.tvPath);
-
-            ivIcon.setImageResource(data.iconId);
-            tvPath.setText(data.path);
-			tvPath.setTextSize(11);
+            holder.ivIcon.setImageResource(data.iconId);
+            holder.tvPath.setText(data.path);
             return convertView;
         }
 
@@ -61,7 +65,10 @@ public class MediaAdapter extends BaseAdapter{
 			list.remove(postion);
 		}
 
-
+	static class ViewHolder{
+		ImageView ivIcon;
+		TextView tvPath;
+	}
     }
 
      class MediaListCellData{
@@ -72,7 +79,6 @@ public class MediaAdapter extends BaseAdapter{
 
 		 public MediaListCellData(String path) {
             this.path = path;
-
             if (path.endsWith(".jpg")) {
                 iconId = R.drawable.icon_photo;
                 type = MediaType.PHOTO;

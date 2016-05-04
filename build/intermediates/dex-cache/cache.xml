@@ -1,3 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="F:\android\Android Project\MyNotes\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_0221e5f57a5a33fca9d9963bae2fa78f1d23d73e\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\Android Project\MyNotes\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1677a2e925db70870e3b6a779a50b46393536d10">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_81c8a56588625844fc850130dcebeb8bb93f93a7\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\Android Project\MyNotes\app\src\libs\android-async-http-1.4.4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-async-http-1.4.4_8839c5fccf33edc52339cb7fe8c15218e0fd883c\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\Android Project\MyNotes\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4575df17716a071d41073fb5ef497665bd1e069d">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3be78d8388abbbd8d9d14d2c5c1f17dc384daeec\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\Android Project\MyNotes\app\src\libs\okhttp-2.7.5.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\2\okhttp-2.7.5_b699aa43fd19066b763b2c951a72ebb740226a41\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\sdk2\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_48eebbb7679c17117ccd174c2894f31c8ef9e29a\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\Android Project\MyNotes\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_be9ec063f6a396b60a41adcaa1d93b831d27e0f9\classes.dex" />
+    </item>
+    <item
+        jar="F:\android\Android Project\MyNotes\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="F:\android\Android Project\MyNotes\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_931653e8f4f026c32eb8e1a486bd7f6a80f7053c\classes.dex" />
+    </item>
+
+</items>

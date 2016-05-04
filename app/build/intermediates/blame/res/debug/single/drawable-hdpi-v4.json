@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable-hdpi\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",

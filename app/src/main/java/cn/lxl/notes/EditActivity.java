@@ -112,7 +112,7 @@ public class EditActivity extends ListActivity {
 		etContent = (EditText) findViewById(R.id.etContent);
 		//如果是编辑则有值(cv)传人，没有值传入时noteId设为-1
 		noteId = getIntent().getIntExtra(EXTRA_NOTE_ID, -1);
-		
+		//如果noteId的值大于-1，则是修改日志，加载数据
 		if (noteId>-1) {
 			etName.setText(getIntent().getStringExtra(EXTRA_NOTE_NAME));
 			etContent.setText(getIntent().getStringExtra(EXTRA_NOTE_CONTENT));
@@ -141,7 +141,7 @@ public class EditActivity extends ListActivity {
 		
 		switch (data.type) {
 		case MediaType.PHOTO:
-			i = new Intent(this,    PhotoViewer.class);
+			i = new Intent(this,PhotoViewer.class);
 			i.putExtra(PhotoViewer.EXTRA_PATH, data.path);
 			startActivity(i);
 			break;

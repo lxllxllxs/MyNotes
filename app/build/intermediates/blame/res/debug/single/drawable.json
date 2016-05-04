@@ -20,12 +20,12 @@
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
@@ -38,6 +38,10 @@
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_photo.png",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\icon_photo.png"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\record.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\record.png"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
@@ -76,12 +80,12 @@
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
-        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\save.png"
-    },
-    {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
+        "source": "F:\\android\\Android Project\\MyNotes\\app\\src\\main\\res\\drawable\\save.png"
     },
     {
         "merged": "F:\\android\\Android Project\\MyNotes\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cancle.png",

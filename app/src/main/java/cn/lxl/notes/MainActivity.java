@@ -52,7 +52,7 @@ public class MainActivity extends ListActivity {
 	Boolean isSuccess;
 	Toolbar tb;
 	//记录数据库文件的位置
-	final String filepath="/data/data/com.lxl.notes/databases/notes.db";
+	final String filepath="data/data/com.lxl.notes/databases/notes.db";
 	//记录备份到本地时的位置
 	final String exportPath= Environment.getExternalStorageDirectory()+"/notes.db";
 	private OnClickListener btn_clickHandler=new OnClickListener() {
